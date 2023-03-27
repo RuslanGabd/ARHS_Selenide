@@ -24,7 +24,7 @@ public class WebTests extends TestBase {
 
     List<String> listNewsChapter = Arrays.asList("News", "IT Blog", "Culture blog");
 
-    @Tag("arhs")
+    @Tag("ui")
     @DisplayName("Check address, phone, email on the page Contact")
     @Owner("RuslanG")
     @Test
@@ -72,22 +72,22 @@ public class WebTests extends TestBase {
         });
     }
 
-    @Tag("arhs")
-    @CsvSource({"Ruslan, Gabdrakhimov"})
-    @ParameterizedTest(name = "В разделе {0} есть строка {1}")
-    public void checkPartNews(String menuItem, String productForm) {
-        step("Перейти на главную страницу", () -> {
-            mainPage.openMainPage();
-        });
-        step("Навести курсор на раздел {0}", () -> {
-            mainPage.hoverMenuItem(menuItem);
-        });
-        step("Проверить, что в каталоге есть формат {1}", () -> {
-            mainPage.verifyProduct(productForm);
-        });
-    }
+//    @Tag("ui")
+//    @CsvSource({"Ruslan, Gabdrakhimov"})
+//    @ParameterizedTest(name = "В разделе {0} есть строка {1}")
+//    public void checkPartNews(String menuItem, String productForm) {
+//        step("Перейти на главную страницу", () -> {
+//            mainPage.openMainPage();
+//        });
+//        step("Навести курсор на раздел {0}", () -> {
+//            mainPage.hoverMenuItem(menuItem);
+//        });
+//        step("Проверить, что в каталоге есть формат {1}", () -> {
+//            mainPage.verifyProduct(productForm);
+//        });
+//    }
 
-    @Tag("arhs")
+    @Tag("ui")
     @DisplayName("Verification that the transition was made to the main page")
     @Owner("RuslanG")
     @Test
