@@ -1,15 +1,15 @@
 # :stars: Test automation project ARHS
 <a target="_blank" href="https://arhs-group.com"></a>
-## :card_file_box: Содержаниеd
+## :card_file_box: Content
 - [Technologies and tools](#earth_africa-stack technologies)
-- Implemented checks
+- [Implemented checks](#computer-implemented-checks)
 - [Building in Jenkins](#earth_africa-Jenkins-job)
-- [Запуск из терминала](#earth_africa-Запуск-тестов-из-терминала)
-- [Allure отчет](#earth_africa-Allure-отчет)
-- [Интеграция с Allure TestOps](#earth_africa-Интеграция-c-Allure-TestOps)
-- [Интеграция с Jira](#earth_africa-Интеграция-c-Jira)
-- [Уведомления в Telegram](#earth_africa-Уведомление-в-Telegram-при-помощи-бота)
-- [Видео примеры прохождения тестов](#earth_africa-Примеры-видео-о-прохождении-тестов)
+- [Run from terminal](#earth_africa-Running-tests-from-terminal)
+- [Allure report](#earth_africa-Allure-report)
+- [Integration with Allure TestOps](#earth_africa-Integration-Allure-TestOps)
+- [Integration with Jira](#earth_africa-Integration-c-Jira)
+- [Notification in Telegram](#earth_africa-Notification-in-Telegram-bot-assisted)
+- [Video examples of passing tests](#earth_africa-test-passing-video examples)
 
 ## :bookmark: Technologies and tools
 <p align="center">
@@ -28,8 +28,28 @@
 
 ## <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Сборка <a target="_blank" href="https://jenkins.autotests.cloud/job/C17_ruslan_g_r_unit_14/"> Jenkins </a>
 <p align="center">
-<a href="https://jenkins.autotests.cloud/job/017-dumyka-itavia/"><img src="images/screens/Jenkins.jpg" alt="Jenkins1"/></a>
+<a href="https://jenkins.autotests.cloud/job//"><img src="images/screens/Jenkins.jpg" alt="Jenkins1"/></a>
 </p>
+
+<p align="center">
+<img width="6%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
+<img width="6%" title="Java" src="images/logo/Java.svg">
+<img width="6%" title="Selenide" src="images/logo/Selenide.svg">
+<img width="6%" title="Selenoid" src="images/logo/Selenoid.svg">
+<img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
+<img width="5%" title="Allure TestOps" src="images/logo/allureTestOps.svg">
+<img width="6%" title="Gradle" src="images/logo/Gradle.svg">
+<img width="6%" title="JUnit5" src="images/logo/JUnit5.svg">
+<img width="6%" title="GitHub" src="images/logo/GitHub.svg">
+<img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
+<img width="6%" title="Jira" src="images/logo/Jira.svg">
+<img width="6%" title="Telegram" src="images/logo/Telegram.svg">
+</p>
+
+Автотесты написаны на <code>Java</code> с использованием <code>JUnit 5</code> и <code>Gradle</code>.
+Для UI-тестов использован фреймворк [Selenide](https://selenide.org/).
+Запуск тестов можно осуществлять локально или с помощью [Selenoid](https://aerokube.com/selenoid/).
+Также реализована сборка в <code>Jenkins</code> с формированием Allure-отчета и отправкой уведомления с результатами в <code>Telegram</code> после завершения прогона.
 
 ## :hammer_and_wrench:: Параметры сборки в Jenkins:
 - remote (адрес удаленного сервера)
