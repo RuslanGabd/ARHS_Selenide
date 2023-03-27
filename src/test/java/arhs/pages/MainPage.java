@@ -1,7 +1,5 @@
 package arhs.pages;
 
-import com.codeborne.selenide.SelenideElement;
-
 import java.util.List;
 
 import static com.codeborne.selenide.CollectionCondition.texts;
@@ -19,7 +17,7 @@ public class MainPage {
     }
 
     public MainPage openPage(String page) {
-        $("#content").$(byText(page)).click();
+        $("#navbarMainMenu").$(byText(page)).click();
         return this;
     }
 

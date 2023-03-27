@@ -6,7 +6,6 @@ import arhs.pages.NewsPage;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
-import arhs.config.WebDriverConfig;
 import arhs.config.WebDriverProvider;
 import arhs.helpers.Attach;
 import org.junit.jupiter.api.AfterEach;

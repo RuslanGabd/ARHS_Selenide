@@ -5,19 +5,10 @@ import arhs.tests.TestBase;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import java.util.Map;
-
 
 public class WebDriverProvider extends TestBase {
 
     static WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
-
-
-//   public WebDriverProvider() {
-//        this.config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
-//        createWebDriver();
-//    }
-
 
 
     public static void config() {

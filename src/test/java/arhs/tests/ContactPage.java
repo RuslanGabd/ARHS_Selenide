@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 
-public class ContactsPage extends TestBase {
+public class ContactPage extends TestBase {
 
 
 
@@ -33,7 +33,7 @@ public class ContactsPage extends TestBase {
     @Tag("ui")
     @DisplayName("Test page with Facker library")
     @Test
-    public void checkPartNews(String menuItem, String productForm) {
+    public void checkPartNews() {
 
         step("Open Main page", () -> {
             mainPage.openMainPage();

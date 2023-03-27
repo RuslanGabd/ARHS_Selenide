@@ -1,8 +1,5 @@
 package arhs.pages;
 
-import arhs.pages.MainPage;
-import com.codeborne.selenide.Condition;
-
 import java.util.List;
 
 import static com.codeborne.selenide.Condition.text;
