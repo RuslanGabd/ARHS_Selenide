@@ -1,8 +1,9 @@
-# :stars: Проект по автоматизации тестирования для Инфосистемы Джет
-<a target="_blank" href="https://arhs.su">Веб сайт Инфосистемы Джет</a>
+# :stars: Test automation project ARHS
+<a target="_blank" href="https://arhs-group.com"></a>
 ## :card_file_box: Содержание
-- [Технологии и инструменты](#earth_africa-Стек-технологий)
-- [Сборка в Jenkins](#earth_africa-Jenkins-job)
+- [Technologies and tools](#earth_africa-stack technologies)
+- Implemented checks
+- [Building in Jenkins](#earth_africa-Jenkins-job)
 - [Запуск из терминала](#earth_africa-Запуск-тестов-из-терминала)
 - [Allure отчет](#earth_africa-Allure-отчет)
 - [Интеграция с Allure TestOps](#earth_africa-Интеграция-c-Allure-TestOps)
@@ -10,7 +11,7 @@
 - [Уведомления в Telegram](#earth_africa-Уведомление-в-Telegram-при-помощи-бота)
 - [Видео примеры прохождения тестов](#earth_africa-Примеры-видео-о-прохождении-тестов)
 
-## :bookmark: Технологии и инструменты
+## :bookmark: Technologies and tools
 <p align="center">
 <a href="https://www.jetbrains.com/idea/"><img src="images/logo/IDEA.svg" width="50" height="50"  alt="IDEA"/></a>
 <a href="https://www.java.com/"><img src="images/logo/Java.svg" width="50" height="50"  alt="Java"/></a>

@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d085c34-914e-4f3a-aaaa-0ebe7cc70987" name="Changes" comment="9">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/WebTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/WebTests.java" afterDir="false" />
+    <list default="true" id="5d085c34-914e-4f3a-aaaa-0ebe7cc70987" name="Changes" comment="1">
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -352,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679253394278</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="1">
+      <created>1679916198539</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1679916198539</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -370,7 +375,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="1" />
     <MESSAGE value="2" />
     <MESSAGE value="3" />
     <MESSAGE value="43" />
@@ -379,6 +383,7 @@
     <MESSAGE value="7" />
     <MESSAGE value="8" />
     <MESSAGE value="9" />
-    <option name="LAST_COMMIT_MESSAGE" value="9" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
 </project>
