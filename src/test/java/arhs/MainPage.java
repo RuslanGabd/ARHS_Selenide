@@ -25,7 +25,7 @@ public class MainPage {
 
 
 
-    public MainPage verifyPageCareer(List<String> list) {
+    public MainPage verifyPageNews(List<String> list) {
         $("ul.nav.nav-tabs.dropdown-menu").$$("li.nav-item").contains(list);
         return this;
     }

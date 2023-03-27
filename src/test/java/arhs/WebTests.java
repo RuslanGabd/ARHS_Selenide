@@ -25,7 +25,7 @@ public class WebTests extends TestBase {
     List<String> listNewsChapter = Arrays.asList("News", "IT Blog", "Culture blog");
 
     @Tag("arhs")
-    @DisplayName("Страница Контакты содержит Кнопку 'Оставить заявку'")
+    @DisplayName("Check address, phone, email on the page Contact")
     @Owner("RuslanG")
     @Test
     void companyDetails() {
@@ -68,12 +68,12 @@ public class WebTests extends TestBase {
             mainPage.openPage("Careers");
         });
         step("Проверка, что страница содержит меню на 5 разделов страницы", () -> {
-            mainPage.verifyPageCareer(listNewsChapter);
+            mainPage.verifyPageNews(listNewsChapter);
         });
     }
 
     @Tag("arhs")
-    @CsvSource({"Пресс-центр, Новости"})
+    @CsvSource({"Ruslan, Gabdrakhimov"})
     @ParameterizedTest(name = "В разделе {0} есть строка {1}")
     public void checkPartNews(String menuItem, String productForm) {
         step("Перейти на главную страницу", () -> {
