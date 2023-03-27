@@ -1,4 +1,4 @@
-package arhs;
+package arhs.pages;
 
 import com.github.javafaker.Faker;
 
@@ -25,7 +25,7 @@ public class ContactPage {
         $("#email").setValue(userEmail);
         $("#message").setValue(message);
         $("#agreed").click();
-        //Thread.sleep(6000);
+
     }
 
     public void clickCheckBox() {

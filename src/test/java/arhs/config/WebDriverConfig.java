@@ -2,19 +2,19 @@ package arhs.config;
 
 import org.aeonbits.owner.Config;
 
-@Config.Sources({
-        "classpath:${dev}.properties"
+@Config.Sources({//"classpath:${env}.properties",
+        "classpath:local.properties"
 })
 public interface WebDriverConfig extends Config {
     @Key("baseUrl")
     @DefaultValue("https://www.arhs-group.com/")
     String getBaseUrl();
 
-    @Key("browser")
+    @Key("browserName")
     @DefaultValue("CHROME")
-    String getBrowser();
+    String getBrowserName();
 
-    @Key("version")
+    @Key("browserVersion")
     @DefaultValue("100.0")
     String getBrowserVersion();
 
@@ -23,6 +23,10 @@ public interface WebDriverConfig extends Config {
     String getBrowserSize();
 
     @Key("remoteUrl")
-    String getRemoteURL();
+    String getRemoteUrl();
+
+    @Key("pageLoadStrategy")
+    @DefaultValue("eager")
+    String getPageLoadStrategy();
 }
 

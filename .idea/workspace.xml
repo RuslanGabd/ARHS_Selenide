@@ -4,13 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d085c34-914e-4f3a-aaaa-0ebe7cc70987" name="Changes" comment="1">
-      <change afterPath="$PROJECT_DIR$/src/test/java/arhs/ContactPage.java" afterDir="false" />
+    <list default="true" id="5d085c34-914e-4f3a-aaaa-0ebe7cc70987" name="Changes" comment="5tests">
+      <change afterPath="$PROJECT_DIR$/src/test/java/arhs/pages/NewsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/arhs/tests/ContactsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/arhs/tests/MainPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/arhs/tests/NewsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/WebTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/WebTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/ContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/pages/ContactPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/WebTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/config/WebDriverConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/config/WebDriverConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/config/WebDriverProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/config/WebDriverProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/remote.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/remote.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +73,30 @@
       <recent name="C:\Users\gmail\IdeaProjects\jet_2\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.WebTests.checkPartNews">
+  <component name="RunManager" selected="Gradle.MainPage.checkTopMenu">
+    <configuration name="MainPage.checkTopMenu" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;arhs.tests.MainPage.checkTopMenu&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="WebTests.carrierJet" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -136,29 +166,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WebTests.companyDetails" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;jet.WebTests.companyDetails&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="WebTests.gomainPageByLogo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -184,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MainPage.checkTopMenu" />
         <item itemvalue="Gradle.WebTests.checkPartNews" />
         <item itemvalue="Gradle.WebTests.carrierJet" />
         <item itemvalue="Gradle.WebTests.gomainPageByLogo" />
         <item itemvalue="Gradle.WebTests.checkTopMenu" />
-        <item itemvalue="Gradle.WebTests.companyDetails" />
       </list>
     </recent_temporary>
   </component>
@@ -397,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679919782987</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="5tests">
+      <created>1679931967175</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1679931967175</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -424,6 +438,7 @@
     <MESSAGE value="8" />
     <MESSAGE value="9" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="5tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="5tests" />
   </component>
 </project>

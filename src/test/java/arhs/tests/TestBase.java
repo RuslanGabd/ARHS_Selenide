@@ -1,5 +1,8 @@
-package arhs;
+package arhs.tests;
 
+import arhs.pages.ContactPage;
+import arhs.pages.MainPage;
+import arhs.pages.NewsPage;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -10,15 +13,16 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 
-public abstract class TestBase {
+public  class TestBase {
 
-    MainPage mainPage = new MainPage();
+ MainPage mainPage = new MainPage();
     ContactPage contactPage = new ContactPage();
-    private static WebDriverConfig config;
+    NewsPage newsPage = new NewsPage();
+
 
     @BeforeAll
     static void beforeAll() {
-        WebDriverProvider provider = new WebDriverProvider();
+        WebDriverProvider.config();
     }
 
     @BeforeEach
