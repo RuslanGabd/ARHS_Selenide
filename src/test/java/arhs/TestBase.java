@@ -13,20 +13,18 @@ import org.junit.jupiter.api.BeforeEach;
 public abstract class TestBase {
 
     MainPage mainPage = new MainPage();
+    ContactPage contactPage = new ContactPage();
     private static WebDriverConfig config;
 
     @BeforeAll
     static void beforeAll() {
-
         WebDriverProvider provider = new WebDriverProvider();
-
     }
 
     @BeforeEach
     public void helpersConfig() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Selenide.clearBrowserCookies();
-
     }
 
     @AfterEach
@@ -36,5 +34,4 @@ public abstract class TestBase {
         Attach.browserConsoleLogs();
         Attach.addVideo();
     }
-
 }

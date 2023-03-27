@@ -21,7 +21,6 @@ public class WebTests extends TestBase {
         return Stream.of(List.of("HOME", "ABOUT US",
                 "EXPERTISE", "CAREERS", "ENTITIES", "NEWS", "CONTACT"));
     }
-
     List<String> listNewsChapter = Arrays.asList("News", "IT Blog", "Culture blog");
 
     @Tag("ui")
@@ -31,15 +30,15 @@ public class WebTests extends TestBase {
     void companyDetails() {
 
         step("Open Main page", () -> {
-           mainPage.openMainPage();
+            mainPage.openMainPage();
         });
         step("Open Contact page", () -> {
             mainPage.openPage("Contact");
         });
         step("Check address, phone, email ", () -> {
-            mainPage.verifyButtons("Boulevard du Jazz, 13");
-            mainPage.verifyButtons( "Phone: +352 26 11 02 1");
-            mainPage.verifyButtons("info@arhs-group.com");
+            contactPage.verifyText("Boulevard du Jazz, 13");
+            contactPage.verifyText("Phone: +352 26 11 02 1");
+            contactPage.verifyText("info@arhs-group.com");
         });
     }
 
@@ -67,25 +66,34 @@ public class WebTests extends TestBase {
         step("Open Main page 'Career'", () -> {
             mainPage.openPage("Careers");
         });
-        step("Проверка, что страница содержит меню на 5 разделов страницы", () -> {
+        step("Check page contains 3 chapter", () -> {
             mainPage.verifyPageNews(listNewsChapter);
         });
     }
 
-//    @Tag("ui")
-//    @CsvSource({"Ruslan, Gabdrakhimov"})
-//    @ParameterizedTest(name = "В разделе {0} есть строка {1}")
-//    public void checkPartNews(String menuItem, String productForm) {
-//        step("Перейти на главную страницу", () -> {
-//            mainPage.openMainPage();
-//        });
-//        step("Навести курсор на раздел {0}", () -> {
-//            mainPage.hoverMenuItem(menuItem);
-//        });
-//        step("Проверить, что в каталоге есть формат {1}", () -> {
-//            mainPage.verifyProduct(productForm);
-//        });
-//    }
+    @Tag("ui")
+    @DisplayName("Test page with Facker library")
+    public void checkPartNews(String menuItem, String productForm) {
+
+        step("Open Main page", () -> {
+            mainPage.openMainPage();
+        });
+        step("Open Contacts page", () -> {
+            mainPage.openPage("Contact");
+        });
+        step("Check page contains CONTACT FORM", () -> {
+            mainPage.verifyPage("CONTACT FORM");
+        });
+        step("fill the form", () -> {
+            contactPage.fillForm();
+        });
+        step("Check page contains CONTACT FORM", () -> {
+            contactPage.clickCheckBox();
+        });
+        step("Check button Send", () -> {
+            contactPage.checkButtonSend();
+        });
+    }
 
     @Tag("ui")
     @DisplayName("Verification that the transition was made to the main page")
@@ -104,6 +112,5 @@ public class WebTests extends TestBase {
         step("Verification that the transition was made to the main page", () -> {
             mainPage.verifyPage("AT THE HEART OF YOUR IT PROJECTS");
         });
-
     }
 }
