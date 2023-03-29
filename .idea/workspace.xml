@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d085c34-914e-4f3a-aaaa-0ebe7cc70987" name="Changes" comment="9.55">
+    <list default="true" id="5d085c34-914e-4f3a-aaaa-0ebe7cc70987" name="Changes" comment="9">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/pages/ContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/pages/ContactPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/pages/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/arhs/pages/NewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/pages/NewsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/tests/ContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/tests/ContactPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/tests/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/tests/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/arhs/tests/NewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/tests/NewsPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +39,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="arhs" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -77,7 +73,7 @@
       <recent name="C:\Users\gmail\IdeaProjects\jet_2\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.NewsPage.newsСhapter">
+  <component name="RunManager" selected="Gradle.NewsPage.checkSocialMediaLink">
     <configuration name="MainPage.checkTopMenu" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -195,9 +191,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.NewsPage.checkSocialMediaLink" />
         <item itemvalue="Gradle.NewsPage.newsСhapter" />
         <item itemvalue="Gradle.MainPage.mainPageByLogo" />
-        <item itemvalue="Gradle.NewsPage.checkSocialMediaLink" />
         <item itemvalue="Gradle.NewsPage" />
         <item itemvalue="Gradle.MainPage.checkTopMenu" />
       </list>

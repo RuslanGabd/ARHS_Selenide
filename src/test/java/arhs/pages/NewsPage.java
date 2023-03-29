@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 
 import java.util.List;
 
+import static com.codeborne.selenide.CollectionCondition.texts;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static org.openqa.selenium.By.linkText;
@@ -11,8 +12,7 @@ import static org.openqa.selenium.By.linkText;
 public class NewsPage {
 
     public NewsPage verifyPageNews(List<String> list) {
-        System.out.println( $("ul.nav.nav-tabs.dropdown-menu").$$("li.nav-item"));
-        $("ul.nav.nav-tabs.dropdown-menu").$$("li.nav-item").contains(list);
+        $("ul.nav.nav-tabs.dropdown-menu").$$("li.nav-item").shouldHave(texts(list));
         return this;
     }
 
