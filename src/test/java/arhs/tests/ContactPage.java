@@ -33,7 +33,7 @@ public class ContactPage extends TestBase {
     @Tag("ui")
     @DisplayName("Test page with Facker library")
     @Test
-    public void checkPartNews() {
+    public void checkContactForm() {
 
         step("Open Main page", () -> {
             mainPage.openMainPage();
@@ -47,7 +47,7 @@ public class ContactPage extends TestBase {
         step("fill the form", () -> {
             contactPage.fillForm();
         });
-        step("Check page contains CONTACT FORM", () -> {
+        step("click reCaptcha", () -> {
             contactPage.clickCheckBox();
         });
         step("Check button Send", () -> {

@@ -17,6 +17,8 @@ public class ContactPage {
     String message = faker.lorem().sentence();
 
 
+
+
     public void fillForm() {
 
         $("#firstname").setValue(firstName);

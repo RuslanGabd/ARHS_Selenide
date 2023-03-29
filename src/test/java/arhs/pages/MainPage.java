@@ -28,7 +28,7 @@ public class MainPage {
     }
 
     public MainPage verifyPage(String text) {
-        $("#navbarMainMenu").shouldHave(text(text));
+        $("#content").shouldHave(text(text));
         return this;
     }
 
