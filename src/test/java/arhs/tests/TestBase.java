@@ -27,12 +27,11 @@ public  class TestBase {
     @BeforeAll
     static void beforeAll() {
         WebDriverProvider.config();
-
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--user-data-dir=./src/test/resources/Profile 2");
-       // chromeOptions.addExtensions(new File("./src/test/profiles/chrome/extentions/bugmagnet.crx"));
-        chromeOptions.addArguments("--start-maximized");
-        chromeOptions.addArguments("disable-popup-blocking", "true");
+//
+//        ChromeOptions chromeOptions = new ChromeOptions();
+//        chromeOptions.addArguments("--user-data-dir=./src/test/resources/Profile 2");
+//        chromeOptions.addArguments("--start-maximized");
+//        chromeOptions.addArguments("disable-popup-blocking", "true");
 
 
       }

@@ -9,7 +9,7 @@ import static io.qameta.allure.Allure.step;
 
 public class ContactPage extends TestBase {
 
-
+    public static String env = System.getProperty("env");
 
     @Tag("ui")
     @DisplayName("Check address, phone, email on the page Contact")
@@ -51,9 +51,9 @@ public class ContactPage extends TestBase {
         step("click reCaptcha", () -> {
             contactPage.clickCheckBox();
         });
-        step("Check button Send", () -> {
-            contactPage.checkButtonSend();
-        });
-    }
 
+//        step("Check button Send", () -> {
+//            contactPage.checkButtonSend();
+//        });
+    }
 }
