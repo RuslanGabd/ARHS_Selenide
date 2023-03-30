@@ -16,6 +16,7 @@ public class ContactPage extends TestBase {
     @Owner("RuslanG")
     @Test
     void companyDetails() {
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver_2");
 
         step("Open Main page", () -> {
             mainPage.openMainPage();
@@ -47,12 +48,12 @@ public class ContactPage extends TestBase {
         step("fill the form", () -> {
             contactPage.fillForm();
         });
-//        step("click reCaptcha", () -> {
-//            contactPage.clickCheckBox();
-//        });
-//        step("Check button Send", () -> {
-//            contactPage.checkButtonSend();
-//        });
+        step("click reCaptcha", () -> {
+            contactPage.clickCheckBox();
+        });
+        step("Check button Send", () -> {
+            contactPage.checkButtonSend();
+        });
     }
 
 }

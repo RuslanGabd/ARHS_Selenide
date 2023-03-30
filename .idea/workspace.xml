@@ -9,6 +9,7 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/arhs/config/WebDriverProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/config/WebDriverProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/arhs/pages/ContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/pages/ContactPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/arhs/tests/ContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/tests/ContactPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/tests/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/tests/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/arhs/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/tests/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,6 +73,7 @@
       <recent name="C:\Users\gmail\IdeaProjects\jet_2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gmail\IdeaProjects\ARHS_\src\test\resources" />
       <recent name="C:\Users\gmail\IdeaProjects\jet_2\src\test\resources" />
     </key>
   </component>
@@ -194,9 +196,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.ContactPage.checkContactForm" />
+        <item itemvalue="Gradle.MainPage.mainPageByLogo" />
         <item itemvalue="Gradle.NewsPage.checkSocialMediaLink" />
         <item itemvalue="Gradle.NewsPage.newsСhapter" />
-        <item itemvalue="Gradle.MainPage.mainPageByLogo" />
         <item itemvalue="Gradle.NewsPage" />
       </list>
     </recent_temporary>
@@ -441,7 +443,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680115950346</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="8.52">
+      <created>1680181631224</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1680181631224</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

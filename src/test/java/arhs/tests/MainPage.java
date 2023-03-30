@@ -49,7 +49,7 @@ public class MainPage extends TestBase {
             mainPage.logoSite();
         });
         step("Verification that the transition was made to the main page", () -> {
-            mainPage.verifyPage("AT THE HEART OF YOUR IT PROJECTSdfdsfds");
+            mainPage.verifyPage("AT THE HEART OF YOUR IT PROJECTS");
         });
     }
 
