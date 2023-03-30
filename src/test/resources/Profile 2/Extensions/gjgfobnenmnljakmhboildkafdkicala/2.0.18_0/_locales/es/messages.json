@@ -1,0 +1,14 @@
+{
+   "appDescription": {
+      "message": "Complemento para habilitar la automatización web. Esta extensión web es compatible con Power Automate para escritorio versión 2.26 o anterior."
+   },
+   "appName": {
+      "message": "Microsoft Power Automate (heredado)"
+   },
+   "deprecationLink": {
+      "message": "aquí"
+   },
+   "deprecationMessage": {
+      "message": "Después de junio de 2023, el explorador Chrome dejará de admitir extensiones web creadas con Manifest V2. La extensión web que está usando se ha creado con Manifest V2 y es compatible con Power Automate para escritorio versión 2.26 o anterior. Por tanto, no estará operativa a partir de junio de 2023. Para continuar con la automatización de escenarios web con este explorador más allá de 2023, debe actualizar su Power Automate para escritorio a la última versión (2.27 o posterior) e instalar la nueva extensión web de Microsoft Power Automate. Más información "
+   }
+}

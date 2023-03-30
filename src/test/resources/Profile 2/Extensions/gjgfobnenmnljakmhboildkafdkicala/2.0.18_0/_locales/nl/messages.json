@@ -1,0 +1,14 @@
+{
+   "appDescription": {
+      "message": "Invoegtoepassing voor het inschakelen van webautomatisering. Deze webextensie is compatibel met Power Automate voor bureaublad versie 2.26 of lager."
+   },
+   "appName": {
+      "message": "Microsoft Power Automate (verouderd)"
+   },
+   "deprecationLink": {
+      "message": "hier"
+   },
+   "deprecationMessage": {
+      "message": "Na juni 2023 biedt de Chrome-browser geen ondersteuning meer voor webextensies die zijn gemaakt met Manifest V2. De webextensie die u gebruikt, is gemaakt met Manifest V2 en is compatibel met Power Automate voor bureaublad versie 2.26 of lager. Daarom is deze vanaf 2023 niet meer functioneel. Als u na 2023 webscenario's wilt automatiseren met deze browser, moet u Power Automate voor bureaublad upgraden naar de meest recente versie (2.27 of hoger) en de nieuwe webextensie Microsoft Power Automate installeren. Meer informatie "
+   }
+}

@@ -1,0 +1,14 @@
+{
+   "appDescription": {
+      "message": "Web otomasyonunu etkinleştirmeye yönelik eklenti. Bu web uzantısı masaüstü için Power Automate'in 2.26 veya önceki sürümleriyle uyumludur."
+   },
+   "appName": {
+      "message": "Microsoft Power Automate (Eski)"
+   },
+   "deprecationLink": {
+      "message": "buraya"
+   },
+   "deprecationMessage": {
+      "message": "Haziran 2023'ten sonra, Chrome tarayıcı, Manifest V2 ile oluşturulan web uzantılarını artık desteklemeyecek. Kullanmakta olduğu web uzantısı Manifest V2 ile oluşturulmuş ve bu uzantı masaüstü için Power Automate 2.26 veya önceki sürümlerle uyumlu. Bu nedenle, Haziran 2023'ten itibaren işlevsel olmayacak. Haziran 2023'ten sonra web senaryolarını bu tarayıcıyla otomatikleştirmeye devam etmek istiyorsanız masaüstü için Power Automate uygulamanızı en son sürüme (2.27 veya sonraki bir sürüm) yükseltmeniz ve yeni Microsoft Power Automate web uzantısını yüklemeniz gerekir. Daha fazla bilgi edinin "
+   }
+}

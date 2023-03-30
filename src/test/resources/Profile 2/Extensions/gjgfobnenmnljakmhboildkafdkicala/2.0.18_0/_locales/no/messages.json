@@ -1,0 +1,14 @@
+{
+   "appDescription": {
+      "message": "Tillegg for aktivering av nettautomatisering. Denne nettutvidelsen er kompatibel med Power Automate for skrivebord, versjon 2.26 eller tidligere."
+   },
+   "appName": {
+      "message": "Microsoft Power Automate (eldre)"
+   },
+   "deprecationLink": {
+      "message": "her"
+   },
+   "deprecationMessage": {
+      "message": "Etter 2023 vil ikke Chrome-nettleseren lenger støtte nettutvidelser som er opprettet med Manifest V2. Nettutvidelsen du bruker, er opprettet med Manifest V2, og den er kompatibel Power Automate for skrivebord, versjon 2.26 eller tidligere. Den vil derfor ikke fungere fra juni 2023 og fremover. Hvis du vil fortsette å automatisere nettscenarioer med denne nettleseren etter juni 2023, må du oppgradere Power Automate for skrivebord til den nyeste versjonen (2.27 eller nyere) og installere den nye nettutvidelsen for Microsoft Power Automate. Finn ut mer "
+   }
+}

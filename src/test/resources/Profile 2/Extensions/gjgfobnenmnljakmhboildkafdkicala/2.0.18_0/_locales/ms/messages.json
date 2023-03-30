@@ -1,0 +1,14 @@
+{
+   "appDescription": {
+      "message": "Tambahan untuk mendayakan automasi web. Sambungan web ini serasi dengan Power Automate untuk desktop versi 2.26 atau lebih awal."
+   },
+   "appName": {
+      "message": "Microsoft Power Automate (Legasi)"
+   },
+   "deprecationLink": {
+      "message": "di sini"
+   },
+   "deprecationMessage": {
+      "message": "Selepas Jun 2023, pelayar Chrome tidak akan menyokong lagi sambungan web yang dicipta dengan Manifest V2. Sambungan web yang anda gunakan dicipta dengan Manifest V2 dan ia serasi dengan Power Automate untuk desktop versi 2.26 atau lebih awal. Oleh itu, ia tidak akan berfungsi mulai Jun 2023. Untuk terus mengautomatikkan senario web dengan pelayar ini selepas Jun 2023, anda mesti menaik taraf Power Automate untuk desktop anda kepada versi terkini (2.27 atau lebih baharu) dan memasang sambungan web Microsoft Power Automate baharu. Ketahui lebih lanjut "
+   }
+}
