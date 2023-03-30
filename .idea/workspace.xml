@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d085c34-914e-4f3a-aaaa-0ebe7cc70987" name="Changes" comment="9">
+    <list default="true" id="5d085c34-914e-4f3a-aaaa-0ebe7cc70987" name="Changes" comment="8.52">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/pages/NewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/pages/NewsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/tests/NewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/tests/NewsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/config/WebDriverProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/config/WebDriverProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/pages/ContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/pages/ContactPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/tests/ContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/tests/ContactPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/tests/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,8 +75,8 @@
       <recent name="C:\Users\gmail\IdeaProjects\jet_2\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.NewsPage.checkSocialMediaLink">
-    <configuration name="MainPage.checkTopMenu" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.ContactPage.checkContactForm">
+    <configuration name="ContactPage.checkContactForm" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -87,7 +89,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;arhs.tests.MainPage.checkTopMenu&quot;" />
+            <option value="&quot;arhs.tests.ContactPage.checkContactForm&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -191,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ContactPage.checkContactForm" />
         <item itemvalue="Gradle.NewsPage.checkSocialMediaLink" />
         <item itemvalue="Gradle.NewsPage.newsСhapter" />
         <item itemvalue="Gradle.MainPage.mainPageByLogo" />
         <item itemvalue="Gradle.NewsPage" />
-        <item itemvalue="Gradle.MainPage.checkTopMenu" />
       </list>
     </recent_temporary>
   </component>
@@ -432,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679946913533</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="8.52">
+      <created>1680115950346</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1680115950346</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -463,6 +472,7 @@
     <MESSAGE value="9.30" />
     <MESSAGE value="9.42" />
     <MESSAGE value="9.55" />
-    <option name="LAST_COMMIT_MESSAGE" value="9.55" />
+    <MESSAGE value="8.52" />
+    <option name="LAST_COMMIT_MESSAGE" value="8.52" />
   </component>
 </project>

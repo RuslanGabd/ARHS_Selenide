@@ -1,6 +1,8 @@
 package arhs.pages;
 
+import com.codeborne.selenide.WebDriverRunner;
 import com.github.javafaker.Faker;
+import org.openqa.selenium.Cookie;
 
 import static com.codeborne.selenide.Condition.disabled;
 import static com.codeborne.selenide.Condition.text;
@@ -15,8 +17,6 @@ public class ContactPage {
     String userPhone = String.valueOf(faker.number().numberBetween(9370000000L, 9379999999L));
     String userEmail = faker.internet().emailAddress();
     String message = faker.lorem().sentence();
-
-
 
 
     public void fillForm() {

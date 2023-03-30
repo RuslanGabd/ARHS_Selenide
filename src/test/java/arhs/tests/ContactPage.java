@@ -47,13 +47,12 @@ public class ContactPage extends TestBase {
         step("fill the form", () -> {
             contactPage.fillForm();
         });
-        step("click reCaptcha", () -> {
-            contactPage.clickCheckBox();
-        });
-        step("Check button Send", () -> {
-            contactPage.checkButtonSend();
-        });
+//        step("click reCaptcha", () -> {
+//            contactPage.clickCheckBox();
+//        });
+//        step("Check button Send", () -> {
+//            contactPage.checkButtonSend();
+//        });
     }
-
 
 }

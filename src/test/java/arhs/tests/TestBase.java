@@ -4,6 +4,7 @@ import arhs.pages.ContactPage;
 import arhs.pages.MainPage;
 import arhs.pages.NewsPage;
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.WebDriverRunner;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import arhs.config.WebDriverProvider;
@@ -11,6 +12,7 @@ import arhs.helpers.Attach;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.openqa.selenium.Cookie;
 
 public  class TestBase {
 
@@ -24,10 +26,12 @@ public  class TestBase {
         WebDriverProvider.config();
     }
 
+
     @BeforeEach
     public void helpersConfig() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-        Selenide.clearBrowserCookies();
+
+        //Selenide.clearBrowserCookies();
     }
 
     @AfterEach
