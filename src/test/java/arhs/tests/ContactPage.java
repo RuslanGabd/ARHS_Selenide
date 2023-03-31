@@ -6,12 +6,12 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
-
+@Tag("arhs")
 public class ContactPage extends TestBase {
 
     public static String env = System.getProperty("env");
 
-    @Tag("ui")
+    @Tag("ContactPage")
     @DisplayName("Check address, phone, email on the page Contact")
     @Owner("RuslanG")
     @Test
@@ -31,7 +31,7 @@ public class ContactPage extends TestBase {
         });
     }
 
-    @Tag("ui")
+    @Tag("ContactPage")
     @DisplayName("Test page with Facker library")
     @Test
     public void checkContactForm() {

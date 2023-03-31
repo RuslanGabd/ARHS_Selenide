@@ -35,7 +35,26 @@ test {
 task arhs_test(type: Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform {
-        includeTags("ui")
+        includeTags("arhs")
+    }
+}
+
+task MainPage_test(type: Test) {
+    systemProperties(System.getProperties())
+    useJUnitPlatform {
+        includeTags("MainPage")
+    }
+}
+task ContactPage_test(type: Test) {
+    systemProperties(System.getProperties())
+    useJUnitPlatform {
+        includeTags("ContactPage")
+    }
+}
+task NewsPage_test(type: Test) {
+    systemProperties(System.getProperties())
+    useJUnitPlatform {
+        includeTags("NewsPage")
     }
 }
 
@@ -49,7 +68,6 @@ dependencies {
             "org.selenide:selenide-selenoid:2.3.5",
             "org.aeonbits.owner:owner:1.0.12",
             "com.github.javafaker:javafaker:1.0.2"
-
     )
 }
 

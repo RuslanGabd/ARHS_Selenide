@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.stream.Stream;
 
 import static io.qameta.allure.Allure.step;
-
+@Tag("arhs")
 public class NewsPage extends TestBase{
 
 
@@ -23,7 +23,7 @@ public class NewsPage extends TestBase{
         return Stream.of(List.of("NEWS", "IT Blog","Culture blog"));
     }
 
-    @Tag("ui")
+    @Tag("NewsPage")
     @DisplayName("Page News contains 3 chapter")
     @MethodSource("listNewsChapter")
     @ParameterizedTest(name = "Top menu display 7 buttons")
@@ -40,7 +40,7 @@ public class NewsPage extends TestBase{
         });
     }
 
-    @Tag("ui")
+    @Tag("NewsPage")
     @DisplayName("Page News links of social networks")
     @Owner("RuslanG")
     @Test()

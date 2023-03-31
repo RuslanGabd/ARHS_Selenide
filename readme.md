@@ -46,10 +46,46 @@
 <img width="6%" title="Telegram" src="images/logo/Telegram.svg">
 </p>
 
-Автотесты написаны на <code>Java</code> с использованием <code>JUnit 5</code> и <code>Gradle</code>.
-Для UI-тестов использован фреймворк [Selenide](https://selenide.org/).
-Запуск тестов можно осуществлять локально или с помощью [Selenoid](https://aerokube.com/selenoid/).
-Также реализована сборка в <code>Jenkins</code> с формированием Allure-отчета и отправкой уведомления с результатами в <code>Telegram</code> после завершения прогона.
+Autotests are written in <code>Java</code> using <code>JUnit 5</code> and <code>Gradle</code>.
+For UI tests, the [Selenide] framework (https://selenide.org/) was used.
+Tests can be run locally or using [Selenoid](https://aerokube.com/selenoid/).
+Also implemented build in <code>Jenkins</code> with generation of an Allure report and sending a notification with the results to <code>Telegram</code> after the run is completed.
+
+Allure report includes:
+* test execution steps;
+* screenshot of the page in the browser at the end of the autotest;
+* Page Source;
+* browser console logs;
+* video of the autotest.
+## :computer: Implemented checks
+
+- [x] *Checking the title of the main page*
+- [x] *Check main menu items*
+- [x] *Check for the presence of the card registration form on the main page*
+- [x] *Checking the change in the amount of the loan in the form of a credit card *
+- [x] *Check validation of the debit card receipt form on an empty field*
+
+# :running_woman: Run tests
+
+### Run tests locally
+```
+gradle clean test -Denv=local
+```
+
+If necessary, you can override the launch options
+```
+test/smoke/regress - run all tests/smoke only/regress only
+
+```
+
+### Run tests on a remote browser
+```
+gradle clean test -Denv=remote
+```
+You can also override launch options if needed.
+
+```
+test/smoke/regress - run all tests/smoke only/regress only
 
 ## :hammer_and_wrench:: Параметры сборки в Jenkins:
 - remote (адрес удаленного сервера)
