@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d085c34-914e-4f3a-aaaa-0ebe7cc70987" name="Changes" comment="finish">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testData.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/screens/Jenkins.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/screens/Jenkins.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/config/WebDriverProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/config/WebDriverProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/pages/NewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/pages/NewsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/tests/ContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/tests/ContactPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/tests/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/tests/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/tests/NewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/tests/NewsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -481,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680270537557</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="finish">
+      <created>1680376827766</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1680376827766</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -29,29 +29,34 @@ compileTestJava {
 }
 
 test {
-    useJUnitPlatform {}
+    useJUnitPlatform()
+    systemProperties(System.getProperties())
 }
 
-task arhs_test(type: Test) {
-    systemProperties(System.getProperties())
-    useJUnitPlatform {
-        includeTags("arhs")
+tasks.withType(Test) {
+    useJUnitPlatform()
+
+    testLogging {
+        lifecycle {
+            events "started", "skipped", "failed", "standard_error", "standard_out"
+            exceptionFormat "short"
+        }
     }
 }
 
-task MainPage_test(type: Test) {
+task MainPage(type: Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform {
         includeTags("MainPage")
     }
 }
-task ContactPage_test(type: Test) {
+task ContactPage(type: Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform {
         includeTags("ContactPage")
     }
 }
-task NewsPage_test(type: Test) {
+task NewsPage(type: Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform {
         includeTags("NewsPage")
