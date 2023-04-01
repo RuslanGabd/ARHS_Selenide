@@ -1,5 +1,6 @@
 package arhs.pages;
 
+import com.codeborne.selenide.CollectionCondition;
 import org.openqa.selenium.By;
 
 import java.util.List;
@@ -7,6 +8,7 @@ import java.util.List;
 import static com.codeborne.selenide.CollectionCondition.texts;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 import static org.openqa.selenium.By.linkText;
 
 public class NewsPage {
@@ -16,9 +18,8 @@ public class NewsPage {
         return this;
     }
 
-    public NewsPage verifyLink(String link) {
-    //  $("div.row.mx-0.mb-3").$(linkText("hjkhk"));
-       $("div.col-md-4dfdscol-sm-12").$("a[href='"+link+"']");
+    public NewsPage verifyLink(List<String> list) {
+        $$("h2[class='thin mb-4']").shouldHave(texts(list));
         return this;
     }
 }

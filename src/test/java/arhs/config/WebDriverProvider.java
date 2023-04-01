@@ -9,11 +9,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-
 public class WebDriverProvider extends TestBase {
 
     static WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
-
 
     public static void config() {
         Configuration.baseUrl = WebDriverProvider.config.getBaseUrl();
@@ -21,8 +19,6 @@ public class WebDriverProvider extends TestBase {
         Configuration.browser = WebDriverProvider.config.getBrowserName();
         Configuration.browserVersion = WebDriverProvider.config.getBrowserVersion();
         Configuration.pageLoadStrategy = WebDriverProvider.config.getPageLoadStrategy();
-
-
 
         String remoteUrl = WebDriverProvider.config.getRemoteUrl();
         if (remoteUrl != null) {

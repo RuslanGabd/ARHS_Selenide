@@ -74,7 +74,7 @@ gradle clean test -Denv=local
 
 If necessary, you can override the launch options
 ```
-test/smoke/regress - run all tests/smoke only/regress only
+MainPage/smoke/regress - run all tests/smoke only/regress only
 
 ```
 

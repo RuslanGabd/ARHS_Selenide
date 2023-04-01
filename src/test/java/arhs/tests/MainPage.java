@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.stream.Stream;
 
 import static io.qameta.allure.Allure.step;
-@Tag("arhs")
+@Tag("MainPage")
 public class MainPage extends TestBase {
 
     static Stream<List<String>> headerTopMenu() {
@@ -19,7 +19,7 @@ public class MainPage extends TestBase {
                 "EXPERTISE", "CAREERS", "ENTITIES", "NEWS", "CONTACT"));
     }
 
-    @Tag("MainPage")
+
     @Owner("RuslanG")
     @MethodSource("headerTopMenu")
     @ParameterizedTest(name = "Top menu display 7 buttons")
@@ -34,7 +34,7 @@ public class MainPage extends TestBase {
     }
 
 
-    @Tag("MainPage")
+
     @DisplayName("Verification that the transition was made to the main page")
     @Owner("RuslanG")
     @Test
