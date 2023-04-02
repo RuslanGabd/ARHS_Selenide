@@ -59,11 +59,12 @@ Allure report includes:
 * video of the autotest.
 ## :computer: Implemented checks
 
-- [x] *Checking the title of the main page*
-- [x] *Check main menu items*
-- [x] *Check for the presence of the card registration form on the main page*
-- [x] *Checking the change in the amount of the loan in the form of a credit card *
-- [x] *Check validation of the debit card receipt form on an empty field*
+- [x] *Checking header Top Menu*
+- [x] *Verification that the transition was made to the main page*
+- [x] *Checking  address, phone, email on the page Contact*
+- [x] *Checking CONTACT FORM  on page Contacts*
+- [x] *Page News contains 3 chapters*
+- [x] *Page News contains article*
 
 # :running_woman: Run tests
 
@@ -74,7 +75,7 @@ gradle clean test -Denv=local
 
 If necessary, you can override the launch options
 ```
-MainPage/smoke/regress - run all tests/smoke only/regress only
+test/MainPage/ContactPage/NewsPage 
 
 ```
 
@@ -85,71 +86,59 @@ gradle clean test -Denv=remote
 You can also override launch options if needed.
 
 ```
-test/smoke/regress - run all tests/smoke only/regress only
-
-## :hammer_and_wrench:: Параметры сборки в Jenkins:
-- remote (адрес удаленного сервера)
-- browserSize (размер окна браузера, по умолчанию 1920x1080)
-- browserVersion (версия браузера, по умолчанию 100.0)
-- browser (браузер, по умолчанию chrome)
-
-## :bookmark: Запуск тестов из терминала
-Локальный запуск:
+test/MainPage/ContactPage/NewsPage 
 ```
-gradle clean jet_test
-```
+## :hammer_and_wrench:: Build options in Jenkins:
 
-Удаленный запуск:
-```
-clean
-jet_test
-"-Dremote=${remote_url}"
-"-DbrowserName=${browserName}"
-"-DbrowserVersion=${browserVersion}"
-"-DbrowserSize =${displaySize}"
+- remote (remote server address)
+- browserSize (browser window size, default 1920x1080)
+- browserVersion (browser version, default 100.0)
+- browser (browser, chrome by default)
+
+
 ```
 ## <img src="images/logo/Allure.svg" width="25" height="25"  alt="Allure"/></a> Allure отчет <a target="_blank" href="https://jenkins.autotests.cloud/job/IBS_test/allure/"></a>
-
-## ⛅: Основной отчет
+```
+## ⛅: Main report
 <p align="center">
 <img title="Allure Overview Dashboard" src="images/screens/Allure.jpg">
 </p>
 
-## 🧪: Пример тест кейса
+## 🧪: Test case example
 <p align="center">
 <img title="AllureSuite" src="images/screens/AllureSuite.jpg">
 </p>
 
 ## <img src="images/logo/Allure.svg" width="25" height="25"  alt="Allure_TO"/></a> Интеграция с Allure TestOps <a target="_blank" href="https://allure.autotests.cloud/project/1858/dashboards"></a>
 
-## :pinching_hand:: Пример ручного тест-кейса
+## :pinching_hand:: An example of a manual test case
 <p align="center">
 <img title="AllureTC" src="images/screens/AllureTC.jpg">
 </p>
 
-## :bar_chart:: Доска
+## :bar_chart:: Board
 <p align="center">
 <img title="AllureDashboard" src="images/screens/AllureDashboard.jpg">
 </p>
 
-## :runner:: Прогоны
+## :runner:: Runs
 <p align="center">
 <img title="Allure Tests" src="images/screens/AllureLaunches.jpg">
 </p>
 
-## <img src="images/logo/Jira.svg" width="25" height="25"  alt="Jira"/></a> Интеграция с Jira <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-519"></a>
+## <img src="images/logo/Jira.svg" width="25" height="25"  alt="Jira"/></a> Jira integration <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-519"></a>
 
 <p align="center">
 <img title="Jira" src="images/screens/jira.jpg">
 </p>
 
-## <img src="images/logo/Telegram.svg" width="25" height="25"  alt="Telegram"/></a> Уведомления в телеграм с использованием бота
+## <img src="images/logo/Telegram.svg" width="25" height="25"  alt="Telegram"/></a> Telegram notifications using a bot
 
 <p align="center">
 <img title="telegram" src="images/screens/telegram.jpg">
 </p>
 
-## <img src="images/logo/Selenoid.svg" width="25" height="25" alt="Jenkins"/></a> Selenoid. Пример прогона тестов. <a target="_blank" href="https://selenoid.autotests.cloud/gif/example.gif"> </a>
+## <img src="images/logo/Selenoid.svg" width="25" height="25" alt="Jenkins"/></a> Selenoid. Test Run Example. <a target="_blank" href="https://selenoid.autotests.cloud/gif/example.gif"> </a>
 
 <p align="center">
 <img title="Selenoid Video" src="images/gif/example.gif" width="250" height="153"  alt="video"> 
