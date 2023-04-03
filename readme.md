@@ -130,5 +130,5 @@ test/MainPage/ContactPage/NewsPage
 
 A video is attached to each test in the report. One of these videos is shown below.
 <p align="center">
-  <img title="Selenoid Video" src="images/gifs/example.gif">
+  <img title="Selenoid Video" src="images/gif/example.gif">
 </p>

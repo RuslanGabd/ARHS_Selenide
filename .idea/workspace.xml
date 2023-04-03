@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5d085c34-914e-4f3a-aaaa-0ebe7cc70987" name="Changes" comment="finish">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/gif/example.gif" beforeDir="false" afterPath="$PROJECT_DIR$/images/gif/example.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/images/logo/Allure_TO.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/images/screens/Allure.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/screens/Allure.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
@@ -497,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680457441024</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="finish">
+      <created>1680513702586</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1680513702586</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
