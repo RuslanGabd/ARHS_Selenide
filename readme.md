@@ -26,11 +26,6 @@
 <a href="https://https://telegram.org/"><img src="images/logo/Telegram.svg" width="50" height="50"  alt="Telegram"/></a>
 </p>
 
-## <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Сборка <a target="_blank" href="https://jenkins.autotests.cloud/job/C17_ruslan_g_r_unit_14/"> Jenkins </a>
-<p align="center">
-<a href="https://jenkins.autotests.cloud/job//"><img src="images/screens/Jenkins.jpg" alt="Jenkins1"/></a>
-</p>
-
 <p align="center">
 <img width="6%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
 <img width="6%" title="Java" src="images/logo/Java.svg">
@@ -96,50 +91,44 @@ test/MainPage/ContactPage/NewsPage
 - browser (browser, chrome by default)
 
 
-```
-## <img src="images/logo/Allure.svg" width="25" height="25"  alt="Allure"/></a> Allure отчет <a target="_blank" href="https://jenkins.autotests.cloud/job/IBS_test/allure/"></a>
-```
-## ⛅: Main report
+ 
+
+## <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Сборка <a target="_blank" href="https://jenkins.autotests.cloud/job/C17_ruslan_g_r_unit_25/"> Jenkins </a>
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screens/Allure.jpg">
+<a href="https://jenkins.autotests.cloud/job//"><img src="images/screens/Jenkins.jpg" alt="Jenkins1"/></a>
 </p>
 
-## 🧪: Test case example
-<p align="center">
-<img title="AllureSuite" src="images/screens/AllureSuite.jpg">
-</p>
-
-## <img src="images/logo/Allure.svg" width="25" height="25"  alt="Allure_TO"/></a> Интеграция с Allure TestOps <a target="_blank" href="https://allure.autotests.cloud/project/1858/dashboards"></a>
-
-## :pinching_hand:: An example of a manual test case
-<p align="center">
-<img title="AllureTC" src="images/screens/AllureTC.jpg">
-</p>
-
-## :bar_chart:: Board
-<p align="center">
-<img title="AllureDashboard" src="images/screens/AllureDashboard.jpg">
-</p>
-
-## :runner:: Runs
-<p align="center">
-<img title="Allure Tests" src="images/screens/AllureLaunches.jpg">
-</p>
-
-## <img src="images/logo/Jira.svg" width="25" height="25"  alt="Jira"/></a> Jira integration <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-519"></a>
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="images/logo/Allure.svg"> <a href="https://jenkins.autotests.cloud/job/C17_ruslan_g_r_unit_25/6/allure/">Example Allure-report</a>
+### Overview
 
 <p align="center">
-<img title="Jira" src="images/screens/jira.jpg">
+<img title="Allure Overview" src="images/screens/Allure.jpg">
 </p>
 
-## <img src="images/logo/Telegram.svg" width="25" height="25"  alt="Telegram"/></a> Telegram notifications using a bot
+### Test result
+
+<p align="center">
+<img title="Test Results in Alure" src="images/screens/AllureReportTests.jpg">
+</p>
+
+# Jira integration
+<p align="center">
+  <img src="images/screens/JiraARHS.png" alt="JiraIntegration" width="950">
+</p>
+
+
+
+### <img width="4%" style="vertical-align:middle" title="Telegram" src="images/logo/Telegram.svg"> Telegram notifications using a bot
 
 <p align="center">
 <img title="telegram" src="images/screens/telegram.jpg">
 </p>
 
-## <img src="images/logo/Selenoid.svg" width="25" height="25" alt="Jenkins"/></a> Selenoid. Test Run Example. <a target="_blank" href="https://selenoid.autotests.cloud/gif/example.gif"> </a>
 
+
+### <img width="4%" style="vertical-align:middle" title="Selenoid" src="images/logo/Selenoid.svg"> Video of an example of running a test in Selenoid
+
+A video is attached to each test in the report. One of these videos is shown below.
 <p align="center">
-<img title="Selenoid Video" src="images/gif/example.gif" width="250" height="153"  alt="video"> 
+  <img title="Selenoid Video" src="images/gifs/example.gif">
 </p>
