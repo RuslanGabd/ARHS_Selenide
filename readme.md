@@ -93,7 +93,7 @@ test/MainPage/ContactPage/NewsPage
 
  
 
-## <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Сборка <a target="_blank" href="https://jenkins.autotests.cloud/job/C17_ruslan_g_r_unit_25/"> Jenkins </a>
+## <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Build <a target="_blank" href="https://jenkins.autotests.cloud/job/C17_ruslan_g_r_unit_25/"> Jenkins </a>
 <p align="center">
 <a href="https://jenkins.autotests.cloud/job//"><img src="images/screens/Jenkins.jpg" alt="Jenkins1"/></a>
 </p>
@@ -109,6 +109,20 @@ test/MainPage/ContactPage/NewsPage
 
 <p align="center">
 <img title="Test Results in Alure" src="images/screens/AllureReportTests.jpg">
+</p>
+
+## <img width="4%" title="Allure TestOPS" src="images/logo/allureTestOps.svg"> Integration  [Allure TestOps](https://qameta.io/)
+
+### Main Dashboard
+
+<p align="center">
+  <img src="images/screens/AllureTestOpsMain.png" alt="dashboard" width="900">
+</p>
+
+### Test case
+
+<p align="center">
+  <img src="images/screens/AllureTestOpsTestCases.png" alt="testcase" width="900">
 </p>
 
 # Jira integration
