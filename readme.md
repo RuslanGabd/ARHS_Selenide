@@ -1,6 +1,7 @@
 # :stars: Test automation project ARHS
 <a target="_blank" href="https://arhs-group.com"></a>
 ## :card_file_box: Content
+
 - [Technologies and tools](#earth_africa-stack technologies)
 - [Implemented checks](#computer-implemented-checks)
 - [Building in Jenkins](#earth_africa-Jenkins-job)
