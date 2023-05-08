@@ -14,8 +14,8 @@ import java.util.stream.Stream;
 import static io.qameta.allure.Allure.step;
 
 @Tag("NewsPage")
+@Owner("RuslanG")
 public class NewsPage extends TestBase {
-
 
 
     static Stream<List<String>> listNewsChapter() {
@@ -42,7 +42,7 @@ public class NewsPage extends TestBase {
         });
     }
 
-    @Owner("RuslanG")
+
     @ParameterizedTest(name = "Page News contains article")
     @MethodSource("articleTitle")
     void checkArticleTitle(List<String> article) {
@@ -53,7 +53,7 @@ public class NewsPage extends TestBase {
             mainPage.openPage("News");
         });
         step("Check article title", () -> {
-            newsPage.verifyLink(article);
+            newsPage.verifyLinks(article);
         });
     }
 }

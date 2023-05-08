@@ -1,10 +1,9 @@
 package arhs.tests;
 
-import arhs.pages.ContactPage;
-import arhs.pages.MainPage;
-import arhs.pages.NewsPage;
+import arhs.pages.ContactPageTest;
+import arhs.pages.MainPageTest;
+import arhs.pages.NewsPageTest;
 import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.WebDriverRunner;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import arhs.config.WebDriverProvider;
@@ -12,36 +11,24 @@ import arhs.helpers.Attach;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-import org.openqa.selenium.Cookie;
-import org.openqa.selenium.chrome.ChromeOptions;
 
-import java.io.File;
+public class TestBase {
 
-public  class TestBase {
-
- MainPage mainPage = new MainPage();
-    ContactPage contactPage = new ContactPage();
-    NewsPage newsPage = new NewsPage();
+    MainPageTest mainPage = new MainPageTest();
+    ContactPageTest contactPage = new ContactPageTest();
+    NewsPageTest newsPage = new NewsPageTest();
 
 
     @BeforeAll
     static void beforeAll() {
         WebDriverProvider.config();
-//
-//        ChromeOptions chromeOptions = new ChromeOptions();
-//        chromeOptions.addArguments("--user-data-dir=./src/test/resources/Profile 2");
-//        chromeOptions.addArguments("--start-maximized");
-//        chromeOptions.addArguments("disable-popup-blocking", "true");
-
-
-      }
+    }
 
 
     @BeforeEach
     public void helpersConfig() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
- Selenide.clearBrowserCookies();
-
+        Selenide.closeWebDriver();
     }
 
     @AfterEach

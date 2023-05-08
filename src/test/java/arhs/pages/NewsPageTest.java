@@ -11,14 +11,14 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static org.openqa.selenium.By.linkText;
 
-public class NewsPage {
+public class NewsPageTest {
 
-    public NewsPage verifyPageNews(List<String> list) {
+    public NewsPageTest verifyPageNews(List<String> list) {
         $("ul.nav.nav-tabs.dropdown-menu").$$("li.nav-item").shouldHave(texts(list));
         return this;
     }
 
-    public NewsPage verifyLink(List<String> list) {
+    public NewsPageTest verifyLinks(List<String> list) {
         $$("h2[class='thin mb-4']").shouldHave(texts(list));
         return this;
     }

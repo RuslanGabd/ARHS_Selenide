@@ -4,26 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d085c34-914e-4f3a-aaaa-0ebe7cc70987" name="Changes" comment="finish">
-      <change afterPath="$PROJECT_DIR$/images/logo/allureTestOps.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/screens/AllureReportTests.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/screens/AllureTestOpsMain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/screens/AllureTestOpsTestCases.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/screens/JiraARHS.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+    <list default="true" id="5d085c34-914e-4f3a-aaaa-0ebe7cc70987" name="Changes" comment="0805">
+      <change afterPath="$PROJECT_DIR$/src/test/java/arhs/pages/MainPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/pages/ContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/pages/ContactPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/pages/ContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/pages/ContactPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/pages/MainPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/pages/NewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/pages/NewsPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/arhs/tests/ContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/tests/ContactPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/tests/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/tests/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/tests/NewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/tests/NewsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/arhs/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arhs/tests/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +95,7 @@
       <recent name="C:\Users\gmail\IdeaProjects\jet_2\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ContactPage.checkContactForm">
+  <component name="RunManager" selected="Gradle.NewsPage">
     <configuration name="ContactPage.checkContactForm" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -130,7 +120,7 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="MainPage.mainPageByLogo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactPage.companyDetails" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -143,7 +133,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;arhs.tests.MainPage.mainPageByLogo&quot;" />
+            <option value="&quot;arhs.tests.ContactPage.companyDetails&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -151,10 +141,10 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
+      <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="NewsPage.checkArticleTitle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MainPage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -167,7 +157,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;arhs.tests.NewsPage.checkArticleTitle&quot;" />
+            <option value="&quot;arhs.tests.MainPage&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -175,10 +165,10 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
+      <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="NewsPage.checkSocialMediaLink" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MainPage.checkTopMenu" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -191,7 +181,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;arhs.tests.NewsPage.checkSocialMediaLink&quot;" />
+            <option value="&quot;arhs.tests.MainPage.checkTopMenu&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -199,10 +189,10 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
+      <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="NewsPage.newsСhapter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="NewsPage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -215,7 +205,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;arhs.tests.NewsPage.newsСhapter&quot;" />
+            <option value="&quot;arhs.tests.NewsPage&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -223,16 +213,16 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
+      <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.NewsPage" />
+        <item itemvalue="Gradle.MainPage.checkTopMenu" />
+        <item itemvalue="Gradle.MainPage" />
+        <item itemvalue="Gradle.ContactPage.companyDetails" />
         <item itemvalue="Gradle.ContactPage.checkContactForm" />
-        <item itemvalue="Gradle.NewsPage.checkArticleTitle" />
-        <item itemvalue="Gradle.NewsPage.checkSocialMediaLink" />
-        <item itemvalue="Gradle.MainPage.mainPageByLogo" />
-        <item itemvalue="Gradle.NewsPage.newsСhapter" />
       </list>
     </recent_temporary>
   </component>
@@ -539,7 +529,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680513702586</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="0805">
+      <created>1683533977732</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1683533977732</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -573,6 +570,7 @@
     <MESSAGE value="8.52" />
     <MESSAGE value="add user profile" />
     <MESSAGE value="finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish" />
+    <MESSAGE value="0805" />
+    <option name="LAST_COMMIT_MESSAGE" value="0805" />
   </component>
 </project>

@@ -7,7 +7,9 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
+
 @Tag("ContactPage")
+@Owner("RuslanG")
 public class ContactPage extends TestBase {
 
 
@@ -19,10 +21,8 @@ public class ContactPage extends TestBase {
     String message = faker.lorem().sentence();
 
     @DisplayName("Check address, phone, email on the page Contact")
-    @Owner("RuslanG")
     @Test
     void companyDetails() {
-       // System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver_2");
 
         step("Open Main page", () -> {
             mainPage.openMainPage();
@@ -31,9 +31,9 @@ public class ContactPage extends TestBase {
             mainPage.openPage("Contact");
         });
         step("Check address, phone, email ", () -> {
-            contactPage.verifyText("Boulevard du Jazz, 13");
-            contactPage.verifyText("Phone: +352 26 11 02 1");
-            contactPage.verifyText("info@arhs-group.com");
+            contactPage.verifyTextContactPage("Boulevard du Jazz, 13");
+            contactPage.verifyTextContactPage("Phone: +352 26 11 02 1");
+            contactPage.verifyTextContactPage("info@arhs-group.com");
         });
     }
 
@@ -52,10 +52,10 @@ public class ContactPage extends TestBase {
             mainPage.verifyPage("CONTACT FORM");
         });
         step("fill the form", () -> {
-            contactPage.fillForm( firstName, lastName, userPhone, userEmail, message);
+            contactPage.fillForm(firstName, lastName, userPhone, userEmail, message);
         });
         step("click reCaptcha", () -> {
-            contactPage.clickCheckBox();
+            contactPage.clickCheckBoxContactForm();
         });
 
 //        step("Check button Send", () -> {
