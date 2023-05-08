@@ -1,5 +1,6 @@
 package arhs.tests;
 
+import com.github.javafaker.Faker;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -9,14 +10,19 @@ import static io.qameta.allure.Allure.step;
 @Tag("ContactPage")
 public class ContactPage extends TestBase {
 
-    public static String env = System.getProperty("env");
 
+    Faker faker = new Faker();
+    String firstName = faker.name().firstName();
+    String lastName = faker.name().lastName();
+    String userPhone = String.valueOf(faker.number().numberBetween(9370000000L, 9379999999L));
+    String userEmail = faker.internet().emailAddress();
+    String message = faker.lorem().sentence();
 
     @DisplayName("Check address, phone, email on the page Contact")
     @Owner("RuslanG")
     @Test
     void companyDetails() {
-        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver_2");
+       // System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver_2");
 
         step("Open Main page", () -> {
             mainPage.openMainPage();
@@ -46,7 +52,7 @@ public class ContactPage extends TestBase {
             mainPage.verifyPage("CONTACT FORM");
         });
         step("fill the form", () -> {
-            contactPage.fillForm();
+            contactPage.fillForm( firstName, lastName, userPhone, userEmail, message);
         });
         step("click reCaptcha", () -> {
             contactPage.clickCheckBox();

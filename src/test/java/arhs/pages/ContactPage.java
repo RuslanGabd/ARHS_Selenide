@@ -11,15 +11,8 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class ContactPage {
 
-    Faker faker = new Faker();
-    String firstName = faker.name().firstName();
-    String lastName = faker.name().lastName();
-    String userPhone = String.valueOf(faker.number().numberBetween(9370000000L, 9379999999L));
-    String userEmail = faker.internet().emailAddress();
-    String message = faker.lorem().sentence();
 
-
-    public void fillForm() {
+    public void fillForm(String lastName, String firstName, String userPhone, String userEmail, String message) {
 
         $("#firstname").setValue(firstName);
         $("#lastname").setValue(lastName);
@@ -36,7 +29,7 @@ public class ContactPage {
         switchTo().defaultContent();
     }
 
-    public void checkButtonSend()  {
+    public void checkButtonSend() {
         $("#contactSubmit").shouldNotHave(disabled);
     }
 
