@@ -1,8 +1,8 @@
 package arhs.tests;
 
-import arhs.pages.ContactPageTest;
-import arhs.pages.MainPageTest;
-import arhs.pages.NewsPageTest;
+import arhs.pages.ContactPage;
+import arhs.pages.MainPage;
+import arhs.pages.NewsPage;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -14,9 +14,9 @@ import org.junit.jupiter.api.BeforeEach;
 
 public class TestBase {
 
-    MainPageTest mainPage = new MainPageTest();
-    ContactPageTest contactPage = new ContactPageTest();
-    NewsPageTest newsPage = new NewsPageTest();
+    MainPage mainPage = new MainPage();
+    ContactPage contactPage = new ContactPage();
+    NewsPage newsPage = new NewsPage();
 
 
     @BeforeAll
@@ -28,11 +28,11 @@ public class TestBase {
     @BeforeEach
     public void helpersConfig() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-        Selenide.closeWebDriver();
     }
 
     @AfterEach
     public void tearDown() {
+        Selenide.closeWebDriver();
         Attach.screenShotAs("Test result");
         Attach.pageSource();
         Attach.browserConsoleLogs();

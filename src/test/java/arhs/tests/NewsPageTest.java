@@ -15,7 +15,7 @@ import static io.qameta.allure.Allure.step;
 
 @Tag("NewsPage")
 @Owner("RuslanG")
-public class NewsPage extends TestBase {
+public class NewsPageTest extends TestBase {
 
 
     static Stream<List<String>> listNewsChapter() {

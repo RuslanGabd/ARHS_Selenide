@@ -10,7 +10,7 @@ import static io.qameta.allure.Allure.step;
 
 @Tag("ContactPage")
 @Owner("RuslanG")
-public class ContactPage extends TestBase {
+public class ContactPageTest extends TestBase {
 
 
     Faker faker = new Faker();

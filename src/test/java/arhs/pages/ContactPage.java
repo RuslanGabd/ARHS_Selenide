@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.$;
 
-public class ContactPageTest {
+public class ContactPage {
 
     public void fillForm(String lastName, String firstName, String userPhone, String userEmail, String message) {
         $("#firstname").setValue(firstName);
@@ -21,10 +21,6 @@ public class ContactPageTest {
         switchTo().frame($x("//iframe[starts-with(@name, 'a-') and starts-with(@src, 'https://www.google.com/recaptcha')]"));
         $("span[id='recaptcha-anchor']").click();
         switchTo().defaultContent();
-    }
-
-    public void checkButtonSend() {
-        $("#contactSubmit").shouldNotHave(disabled);
     }
 
     public void verifyTextContactPage(String expectedText) {

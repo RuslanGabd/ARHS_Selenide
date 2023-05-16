@@ -15,7 +15,7 @@ import static io.qameta.allure.Allure.step;
 
 @Tag("MainPage")
 @Owner("RuslanG")
-public class MainPage extends TestBase {
+public class MainPageTest extends TestBase {
 
     static Stream<List<String>> headerTopMenu() {
         return Stream.of(List.of("HOME", "ABOUT US",

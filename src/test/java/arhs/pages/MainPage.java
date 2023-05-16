@@ -8,30 +8,30 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class MainPageTest {
+public class MainPage {
 
-    public MainPageTest openMainPage() {
+    public MainPage openMainPage() {
         open("https://arhs-group.com/");
         return this;
     }
 
-    public MainPageTest openPage(String page) {
+    public MainPage openPage(String page) {
         $("#navbarMainMenu").$(byText(page)).click();
         return this;
     }
 
 
-    public MainPageTest clickLogoSite() {
+    public MainPage clickLogoSite() {
         $("a.navbar-brand.ms-3").click();
         return this;
     }
 
-    public MainPageTest verifyPage(String text) {
+    public MainPage verifyPage(String text) {
         $("#content").shouldHave(text(text));
         return this;
     }
 
-    public MainPageTest verifyHeaderMenuItems(List<String> buttons) {
+    public MainPage verifyHeaderMenuItems(List<String> buttons) {
         $("#navbarMainMenu").$$("li.nav-item.mx-3").shouldHave(texts(buttons));
         return this;
     }
